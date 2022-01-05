@@ -1,0 +1,44 @@
+﻿@model YapıMarket2.Models.entity.Urunler
+
+@{
+    ViewBag.Title = "UrunGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("GÜNCELLE", "urun", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.HiddenFor(k => k.UrunID)
+    @Html.LabelFor(k => k.UrunID)
+    @Html.TextBoxFor(k => k.UrunID, new { @class= "form-control" })
+
+    @Html.LabelFor(k => k.UrunAD)
+    @Html.TextBoxFor(k => k.UrunAD, new { @class= "form-control" })
+
+    @Html.LabelFor(k => k.UrunKategori)
+    @Html.TextBoxFor(k => k.UrunKategori, new { @class= "form-control" })
+
+    @Html.LabelFor(k => k.Marka)
+    @Html.TextBoxFor(k => k.Marka, new { @class= "form-control" })
+
+    @Html.LabelFor(k => k.Fiyat)
+    @Html.TextBoxFor(k => k.Fiyat, new { @class= "form-control" })
+
+    @Html.LabelFor(k => k.Stok)
+    @Html.TextBoxFor(k => k.Stok, new { @class= "form-control" })
+
+
+    <div style="margin-top: 20px;">
+        <button class="btn btn-warning">ÜRÜN GÜNCELLE</button>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+}

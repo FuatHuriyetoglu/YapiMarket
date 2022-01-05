@@ -1,0 +1,27 @@
+﻿@model YapıMarket2.Models.entity.Kategoriler
+
+@{
+    ViewBag.Title = "KategoriGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("GÜNCELLE", "kategori", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.HiddenFor(c => c.KategoriID)
+        @Html.LabelFor(c=> c.KategoriID)
+        @Html.TextBoxFor(c => c.KategoriID, new { @class = "form-control" })
+
+        @Html.LabelFor(c => c.KategoriAD)
+        @Html.TextBoxFor(c => c.KategoriAD, new { @class = "form-control" })
+
+       
+
+
+        <div style="margin-top: 20px;">
+            <button class="btn btn-warning">KATEGORİ GÜNCELLE</button>
+        </div>
+
+    </div>
+}

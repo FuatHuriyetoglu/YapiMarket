@@ -1,0 +1,35 @@
+﻿@model YapıMarket2.Models.entity.Musteriler
+
+@{
+    ViewBag.Title = "MusteriGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("GÜNCELLE", "musteri", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.HiddenFor(m => m.MusteriID)
+    @Html.LabelFor(m => m.MusteriID)
+    @Html.TextBoxFor(m => m.MusteriID, new { @class = "form-control" })
+
+
+    @Html.LabelFor(m => m.MusteriAD)
+    @Html.TextBoxFor(m => m.MusteriAD, new { @class = "form-control" })
+
+    @Html.LabelFor(m => m.MusteriSoyad)
+    @Html.TextBoxFor(m => m.MusteriSoyad, new { @class = "form-control" })
+
+
+    <div style="margin-top: 20px;">
+        <button class="btn btn-warning">MÜŞTERİ GÜNCELLE</button>
+    </div>
+
+</div>
+}
+
+
+
+
+
+

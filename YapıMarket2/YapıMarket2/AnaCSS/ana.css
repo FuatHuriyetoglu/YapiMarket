@@ -1,0 +1,568 @@
+﻿/* GENERAL SETTİNGS*/
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('font/Raleway-Regular.ttf') format('truetype');
+}
+
+body {
+    background: #fff; 
+    color:#500D16;
+    font: 14px / 28px arial;
+    font-family: 'Raleway';
+}
+
+h1 {
+    font-size:52px;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+.sectionHeader {
+    background: #550D16;
+    border-bottom: 6px solid #000;
+    height: 60px;
+    color: #fff;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+
+h3 {
+    font-size: 16px;
+    color: #500D16;
+    transition: all .5s ease;
+}
+
+.sectionArea {
+    padding: 80px 0;
+}
+
+
+
+
+/* GRID SETTİNGS*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.featuresBody .container  {
+    justify-content: space-between;
+}
+
+.col3 {
+    flex-grow: 1;
+    width: 33.33%;
+}
+
+.engineBody .container {
+    justify-content: space-between;
+}
+
+.col2 {
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+/* HOME SETTİNGS*/ 
+
+
+header .logo {
+    margin-right: auto;
+}
+header .logo img {
+    display: block;
+    height: 70px;
+}
+
+
+.menu li {
+    float: left;
+    
+}
+
+.menu li a {
+    padding: 27px 17px;
+    display:block;
+    text-decoration:none;
+    letter-spacing: 2px;
+    color:#000000;
+    transition:  all .5s ease;
+    
+}
+
+.menu li:last-child a {
+    padding-right: 0;
+}
+
+.menu li:hover a{
+    background:#808080;
+    color: #fff;
+}
+
+#mainSlider {
+    height: 500px;
+    width:1300px;
+    background: url('resimler/1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.slider {
+    width: 100%;
+}
+
+#mainCaption{
+     height:500px;
+     background: rgba(0,0,0, .6);
+}
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.featuresTop {
+    text-align: center;
+}
+
+.item {
+    padding: 10px 20px;
+}
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.zoom img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    transition: all .5s ease;
+
+}
+
+.item .itemText {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #500D16;
+}
+
+.item:hover .zoom img {
+    transform: scale(1.25);
+}
+
+.item:hover h3 {
+    color: #fff;
+}
+
+.item:hover .itemText {
+    background: #500D16;
+    color: #fff;
+    transition:all .5s ease;
+}
+
+.btnDetails {
+    color: #500d16;
+    padding: 3px 10px;
+    text-decoration: none;
+    border: 1px solid #500d16;
+    transition: all .5s ease;
+}
+
+.item:hover .btnDetails{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.itemText p{
+    margin: 20px 0;
+}
+#parallax {
+    background: linear-gradient( 
+    rgba(0,0,0, .6), 
+    rgba(0,0,0, .6) );
+    background-image: url('resimler/2381.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#parallax p {
+    color: #fff;
+}
+
+.engineTop {
+    text-align: center;
+}
+.engineContainer {
+    position: relative;
+    width: 100%;
+}
+.imageOver {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.engineOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(80,13,22,.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay {
+    width: 100%;
+}
+
+.engineText {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.engineOverlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(80,13,22,.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay2 {
+    width: 100%;
+    left: 0;
+}
+
+footer {
+    background: #500D16;
+    text-align: center;
+
+}
+
+
+.footerItem {
+    padding: 20px;
+    
+}
+
+.footerItem img {
+    height: 50px;
+    opacity: .5;
+}
+
+
+footer h3{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+
+footer .fa {
+    font-size: 30px;
+    color: #95a5a6;
+    line-height: 50px;
+    transition: .3s ease;
+}
+
+footer .fa:hover{
+    color: #fff;
+}
+
+footer p {
+    color: #95a5a6;
+    line-height: 20px;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #95a5a6;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+
+
+
+.footerLinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.socialLinks li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+         /*HABER OYUNLAR*/
+#oyunSlider {
+    height: 250px;
+    background-size: cover;
+    background-image:url('resimler/evelyn.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#oyunCaption {
+    height: 250px;
+    background: rgba(0,0,0, .4)
+}
+
+#inspect {
+    background-color: #f5f5f5;
+
+}
+
+.inspectTop{
+    text-align: center;
+
+}
+
+.inspectBody .col2 {
+    text-align: center;
+
+}
+
+.inspectText{
+    padding-left: 10px;
+}
+
+
+h4 {
+    color: #500d16;
+    font-size: 14px;
+    font-weight: bold;
+    flex-wrap:nowrap;
+}
+
+
+.inspectText a {
+    text-decoration: none;
+    color: #500d16;
+}
+
+.content {
+    width:100%;
+    height:500px;
+    background-color:aqua;
+}
+
+     /*gelecek oyunar*/
+
+
+
+
+
+#gelecekSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('resimler/asasin.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#gelecekCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+
+.icerik {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    color: #000;
+}
+
+.içerikyazı img {
+    margin-top:40px;
+ 
+}
+.icerikyazi2 p {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 5%;
+    margin-right: 10%;
+    flex-wrap: nowrap;
+}
+.icerikyazi2 {
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-wrap: nowrap;
+}
+
+.icerikyazi2 li {
+    flex-wrap: nowrap;
+}
+
+/*lol oyunlar*/
+#lolSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/lolhaber1.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#lolCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+
+ /*pubg oyunlar*/
+#pubgSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/pubghaber1.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#pubgCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+
+
+ /*csgo oyunlar*/
+
+#csgoSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/csgohaber1.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#csgoCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+
+/*detroit oyunlar*/
+
+#detroitSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/detroithaber.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#detroitCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+/*sekiro oyunlar*/
+
+#sekiroSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/Sekirohaber1.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#sekiroCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+    /*sekiro oyunlar*/
+
+#cıtızenSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/starcıtızenhaber.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#cıtızenCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+
+}
+
+
+/*world oyunlar*/
+
+#worldSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/worldwarzhaber.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#worldCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+
+/*residen oyunlar*/
+
+#residenSlider {
+    height: 250px;
+    background-size: cover;
+    background-image: url('haber resimleri/residenevilhaber.jpg');
+}
+
+.slider {
+    width: 100%;
+}
+
+#residenCaption {
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}

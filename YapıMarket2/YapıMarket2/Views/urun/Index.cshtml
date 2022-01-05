@@ -1,0 +1,35 @@
+﻿@using YapıMarket2.Models.entity
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>UrunKategori</th>
+        <th>UrunID</th>
+        <th>UrunAD</th>
+        <th>Marka</th>
+        <th>Fiyat</th>
+        <th>Stok</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+    </tr>
+    <tbody>
+        @foreach (var urn in Model)
+        {
+            <tr>
+                <td>@urn.UrunKategori</td>
+                <td>@urn.UrunID</td>
+                <td>@urn.UrunAD</td>
+                <td>@urn.Marka</td>
+                <td>@urn.Fiyat</td>
+                <td>@urn.Stok</td>
+                <td><a href="/urun/SİL/@urn.UrunID" class="btn btn-danger">SİL</a></td>
+                <td><a href="/urun/UrunGetir/@urn.UrunID" class="btn btn-success">GÜNCELLE</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/urun/UrunEkle/" class="btn btn-primary">ÜRÜN EKLE</a>
